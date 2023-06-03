@@ -1,0 +1,1 @@
+﻿This repository is the server source code for chichu.cc, powered by ASP.NET Core.

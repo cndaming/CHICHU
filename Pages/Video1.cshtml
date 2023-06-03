@@ -1,0 +1,29 @@
+﻿@page
+@model CHICHU.Pages.Video1
+@{
+}
+@{
+	ViewData["Title"] = "GNS Project 1";
+}
+<script src="https://cdn.bootcdn.net/ajax/libs/dplayer/1.27.1/DPlayer.min.js"></script>
+<div class="text-center">
+	<h1 class="display-4">实验一：使用交换机组网</h1>
+	<br>
+</div>
+<div id="dplayer" style="position: center;margin:auto;"></div>
+<div class="text-center">
+	<br>
+    <button onclick="window.open('https://www.aliyundrive.com/s/AsoRPbYADuR')">下载</button>
+    <button onclick="window.open('https://internet.hactcm.edu.cn/network/syzds/Article/20232/ArticleContent_572.html')">更多</button>
+</div>
+<script>
+    const dp = new DPlayer({
+        container: document.getElementById('dplayer'),
+        screenshot: true,
+        video: {
+            url: 'https://cdn-cn.chichu.cc/01.webm',
+            pic: 'https://cdn-cn.chichu.cc/01.webp'
+        }
+    });
+
+</script>
